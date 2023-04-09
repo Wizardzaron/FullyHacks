@@ -1,19 +1,24 @@
 <html>
-
     <body>
-            <h1>Hello</h1>
-            <p>world</p>
-
-            <ul> 
-
-                {% for info in retrieve_data %}
-
-                    <h4> {{info[0]}}</h4>
+        <h1>How Online Learning Ruined Our Education</h1>
 
 
+        <ul> 
+            {% for file in image_files %}
 
-            </ul>
-                {% endfor %}
+             <img src = "{{file}}" width="500" height="600" > 
+
+            {% endfor %}
+
+            {% for info in retrieve_data %}
+
+            <h4> {{info[0]}}</h4>
+
+            {% endfor %}
+            
+
+        </ul>
+            
 
     </body>
 
